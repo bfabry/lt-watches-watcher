@@ -1,2 +1,3 @@
-{:+ {:inline.watch [:lt.plugins.watches-watcher/update-watcher
+{:+ {:app [(:lt.objs.plugins/load-js "watches-watcher_compiled.js")]
+     :inline.watch [:lt.plugins.watches-watcher/update-watcher
                     :lt.plugins.watches-watcher/remember-selection-on-watch-creation]}}
