@@ -11,9 +11,10 @@
   [:ul.watchlist (map (fn [watch]
                         (.log js/console (:last-result watch))
                         [:li
+                         {:style "padding-bottom: 3px;"}
                          [:p.location [:span.cm-bracket3 (str (:name (:ed-info watch)) ":" (:line-no watch))]]
-                         [:pre [:span.text (:text watch)]
-                          [:span.inline-result.open.result-mark.full (crate/raw (:last-result watch))]]])
+                         [:span.text (:text watch)]
+                         [:span.inline-result.open.result-mark.full (crate/raw (:last-result watch))]])
                       watches)])
 
 (defui watchlist [watches]
