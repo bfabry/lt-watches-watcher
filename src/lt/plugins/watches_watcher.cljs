@@ -9,7 +9,6 @@
 
 (defui watch-ui [watches]
   [:ul.watchlist (map (fn [watch]
-                        (.log js/console (:last-result watch))
                         [:li
                          [:p.location [:span.cm-bracket3 (str (:name (:ed-info watch)) ":" (:line-no watch))]]
                          [:pre [:span.text (:text watch)]
