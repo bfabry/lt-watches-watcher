@@ -1,2 +1,2 @@
-(defproject watches-watcher "0.0.2"
+(defproject watches-watcher "0.0.3"
   :dependencies [[org.clojure/clojure "1.5.1"]])
